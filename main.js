@@ -394,7 +394,7 @@ export class PostgresDb${module_name_capitalize}Repository
       .where(eq(${module_name}.id, id.value))
       .execute();
 
-    if (!${module_name}[0]) {
+    if (!db${module_name_capitalize}[0]) {
       return null;
     }
 
